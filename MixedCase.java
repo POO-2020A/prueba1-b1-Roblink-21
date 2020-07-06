@@ -32,5 +32,17 @@ class MixedCase {
     System.out.print("In:");
     String s = inp.nextLine();
     //write your code below
+    String[] piezas = s.split("");
+    String palabra = "";
+        for (int i = 0; i < s.length(); i++) {
+            if (i % 2 == 0) {
+                palabra = palabra + piezas[i].toLowerCase();
+            } else {
+                palabra = palabra + piezas[i].toUpperCase();
+            }
+
+        }
+        System.out.println(palabra);
+    }
   }
 }
