@@ -35,8 +35,11 @@ class Palindrome {
         String[] letras = frase.split("");
 
         for (int i = 0; i < letras.length; i++) {
-            if ((letras[i].equals("A"))) {
-                letras[i].replace("A", "a");
+            if ((letras[i].equals("á"))) {
+                letras[i].replace("á", "a");
+            }
+            if ((letras[i].equals("ñ"))) {
+                letras[i].replace("ñ", "n");
             }
         }
 
