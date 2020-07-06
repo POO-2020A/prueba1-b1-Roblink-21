@@ -25,7 +25,38 @@ class Palindrome {
     System.out.print("In:");
     String s = inp.nextLine();
    	//write your code below
-   	
+   	String[] piezas = s.split(" ");
+    String frase = "";
+
+        for (int i = 0; i < piezas.length; i++) {
+            frase = frase + piezas[i];
+        }
+
+        String[] letras = frase.split("");
+
+        for (int i = 0; i < letras.length; i++) {
+            if ((letras[i].equals("A"))) {
+                letras[i].replace("A", "a");
+            }
+        }
+
+        String alrreves = "";
+
+        for (int i = letras.length - 1; i >= 0; i--) {
+            alrreves = alrreves + letras[i];
+        }
+
+        System.out.println("-----------------------------------------------------");
+        boolean palindromo = false;
+
+        if (frase.equals(alrreves)) {
+            palindromo = true;
+            System.out.println("La frase '" + frase + "' se le exactamente igual si se le desde la derecha.");
+            System.out.println(palindromo);
+        } else {
+            System.out.println(palindromo);
+        }
+        System.out.println("-----------------------------------------------------");
    	
   }
 }
