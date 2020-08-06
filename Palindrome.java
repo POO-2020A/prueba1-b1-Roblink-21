@@ -49,7 +49,6 @@ class Palindrome {
             alrreves = alrreves + letras[i];
         }
 
-        System.out.println("-----------------------------------------------------");
         boolean palindromo = false;
 
         if (frase.equals(alrreves)) {
@@ -59,7 +58,6 @@ class Palindrome {
         } else {
             System.out.println(palindromo);
         }
-        System.out.println("-----------------------------------------------------");
    	
   }
 }
