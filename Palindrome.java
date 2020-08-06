@@ -53,7 +53,6 @@ class Palindrome {
 
         if (frase.equals(alrreves)) {
             palindromo = true;
-            System.out.println("La frase '" + s + "' se le exactamente igual si se lee desde la derecha.");
             System.out.println(palindromo);
         } else {
             System.out.println(palindromo);
